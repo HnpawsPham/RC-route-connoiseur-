@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route Connouiseur</title>
+    <link rel="stylesheet" href="./style/etc.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/nav.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.9/dist/goong-js.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.9/dist/goong-js.css" rel="stylesheet" />
 </head>
+
 <body>
-    <h1 id="web-name">RC</h1>
+    <div id="nav">
+        <h1 id="web-name">RC</h1>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#category">Category</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+    <div id="main" class="hide-scrollbar">
+
+        <div id="home" class="body-part">
+            <h1>Your Location</h1>
+            <br>
+            <div id="map"></div>
+        </div>
+
+        <div id="popular" class="body-part">
+            <h1>Most Popular Destinations around</h1>
+
+            <div id="chosen-address">
+                <span>From: </span>
+                <input id="commune" type="text">
+                <input id="district" type="text">
+                <input id="province" type="text">
+            </div>
+        </div>
+
+        <div id="category" class="body-part">
+            <h1>Choose a Type</h1>
+            <select name="select" id="select">
+                <option value="">Types</option>
+                <option value="coffee">Coffee Shop</option>
+                <option value="hotel">Hotel</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="swimming-pool">Swimming pool</option>
+            </select>
+
+            <div id="places"></div>
+        </div>
+
+        <div id="about" class="body-part">
+            <div id="credit">
+                <h2>About us</h2>
+                <a href="#about">@HnpawsPham</a><br><br>
+                <u>API from Goong</u>
+                <p>Contact: 984248085</p>
+                <p>Email: demo@hotmail.com</p>
+                <p>Location: VN</p>
+            </div>
+
+            <div id="tags">
+                <ul>
+                    <li>map</li>
+                    <li>destinations</li>
+                    <li>travel</li>
+                    <li>places</li>
+                    <li>tracking</li>
+                    <li>tool</li>
+                    <li>search</li>
+                    <li>route</li>
+                    <li>gps</li>
+                    <li>direct</li>
+                    <li>rc</li>
+                    <li>map</li>
+                    <li>destinations</li>
+                    <li>travel</li>
+                    <li>places</li>
+                    <li>tracking</li>
+                    <li>tool</li>
+                    <li>search</li>
+                    <li>route</li>
+                </ul>
+                <br>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/findAllPopular.js"></script>
 </body>
+
 </html>

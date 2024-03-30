@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: rakkas;
+    src: url(../fonts/Rakkas/Rakkas-Regular.ttf);
+}
+
+body{
+    overflow-x: hidden;
+    font-family: rakkas;
+}
+
+:root{
+    --orange: #fb9348;
+    --black: rgb(90, 74, 74);
+    --blacker: rgb(72, 62, 62);
+}

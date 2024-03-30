@@ -1,0 +1,41 @@
+#web-name{
+    cursor: pointer;
+    text-decoration: underline;
+    width: 60%;
+    height: 100%;
+    padding-left: 50px;
+    font-size: 70px;
+    color: var(--orange);
+}
+
+ul{
+    z-index: 8;
+    height: 100%;
+    width: 40%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px 30px;
+    color: var(--black);
+}
+
+ul li a:hover{
+    background-color: var(--blacker);
+    color: white;
+}
+
+#nav{
+    margin-top: -15vh;
+    position: fixed;
+    z-index: 6;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    border-bottom: 3px solid var(--black) ;
+    background-color: white;
+}
