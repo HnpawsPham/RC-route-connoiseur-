@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -8,13 +8,36 @@
     src: url(../fonts/Rakkas/Rakkas-Regular.ttf);
 }
 
-body{
+body {
     overflow-x: hidden;
     font-family: rakkas;
 }
 
-:root{
+:root {
     --orange: #fb9348;
     --black: rgb(90, 74, 74);
     --blacker: rgb(72, 62, 62);
+    --olive: rgb(236, 238, 180);
+    --fill: 0;
+}
+
+.fill-heart {
+    color: rgb(222, 28, 28);
+    --fill : 1;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' var(--fill),
+  'wght' 300,
+  'GRAD' 200,
+  'opsz' 24
+}
+
+.favorite-btn{
+    transition: all 1s;
+}
+
+.need-permission{
+    display: none;
 }

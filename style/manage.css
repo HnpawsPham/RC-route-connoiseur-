@@ -1,0 +1,14 @@
+#table{
+    margin: auto;
+}
+
+td,th{
+    padding: 0 30px;
+    border: 3px solid black;
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.5);
+}

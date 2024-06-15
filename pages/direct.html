@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="../style/direct.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.9/dist/goong-js.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link href="https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.9/dist/goong-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/@mapbox/polyline/src/polyline.js"></script>
+    <script src="https://unpkg.com/@goongmaps/goong-sdk/umd/goong-sdk.min.js"></script>
 
 </head>
 <body>
@@ -19,14 +23,18 @@
 
         <ul>
             <li id="return-home"><a href="#home">Home</a></li>
-            <li><a href="#popular">Popular</a></li>
-            <li><a href="#category">Category</a></li>
-            <li><a href="#about">About</a></li>
+            <li class="hidden"><a href="#popular">Popular</a></li>
+            <li class="hidden"><a href="#category">Category</a></li>
+            <li class="hidden"><a href="#about">About</a></li>
         </ul>
     </div>
 
     <div id="main">
-        <img id="review-img" src="" alt="">
+        <div id="visual">
+            <img id="review-img" src="" alt="">
+            <div id="preview-img"></div>
+        </div>
+        
         
         <div id="all-info">
             <div id="container"></div>
@@ -39,7 +47,37 @@
         </div>
     </div>
 
-    <script type="module" src="../js/installComments.js"></script>
-    <script type="module" src="../js/direct.js"></script>
+    <br><br>
+
+    <h1 class="outside">You may like!</h1>
+    <div id="relevances" class="outside-box"></div>
+
+    <br><br><br>
+
+    <h1 class="outside">Add your opinion</h1>
+    <form action="" id="post-comment" class="outside-box">
+
+        <div class="comment-container">
+            <p id="comment-content"></p>
+            <i id="comment-date"></i>
+        </div>
+
+        <div>
+            <input id="comment-input" type="text" placeholder="Text here">
+            <input type="submit" value="Send">
+        </div>
+       
+    </form>
+
+    <br><br><br>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="../js/review_page/review.js"></script>
+    <script type="module" src="../js/review_page/direct.js"></script>
+    <script type="module" src="../js/review_page/installComments.js"></script>
+    <script type="module" src="../js/review_page/loadDestinationInfo.js"></script>
+    <script type="module" src="../js/review_page/suggest.js"></script>
+    <script type="module" src="../js/review_page/post_comment.js"></script>
+    <script type="module" src="../js/review_page/save_viewed_&_liked.js"></script>
 </body>
 </html>

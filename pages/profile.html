@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account</title>
+
+    <link rel="stylesheet" href="../style/etc.css">
+    <link rel="stylesheet" href="../style/profile.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <!-- return home -->
+    <span id="return-home" class="material-symbols-outlined">home</span>
+
+    <!-- main form -->
+    <a id="log-out" href="">Log out</a>
+
+    <div id="title-container">
+        <h1>Your liked</h1>
+        <h1>Your history</h1>
+    </div>
+   
+
+    <div id="big-tab-container">
+        <div id="liked" class="big-tab"></div>
+        <div id="history" class="big-tab"></div>
+    </div>
+   
+    <form id="share" action="">
+        <input type="button" value="Copy your profile link">
+        <input type="text" placeholder="https://demo/id">
+    </form>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="../js/user/logout.js"></script>
+    <script type="module" src="../js/user/load_user_data.js"></script>
+</body>
+</html>
